@@ -9,6 +9,7 @@ Features/functions
 
 - automatic rotation using built-in accelerometer designed for Harddisk active protection system (HDAPS).
 - manual rotation - clockwise or counter-clockwise
+- automatic remaping of lid up and down buttons according to orientation
 - notifications 
 
 Installation/requirements
