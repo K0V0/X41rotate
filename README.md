@@ -26,10 +26,15 @@ Make it executable (if not)
 
 ```chmod +x thinkrotate```
 
-To make it automatically start with system (gnome): 
+To make it automatically start with system :
+
+A.) 
 1. Go to system > preferences > startup applications
 2. Simply add path to binary into command field
-3. Name it whatever you want.  
+3. Name it whatever you want
+
+B.)
+Starting version 0.1.1 There is added functionality for mapping lid up and down key to up and down arrow depending on screen orientation, however to use this functionality program needs to be started from /etc/rc.local file or by another method thad give him superuser privilegies. This could be risky and in linux world is strongly not recommended.
 
 It is good thing to use one of the X41's hardware buttons located on lid to take action, ideal first one from the left after power and lock button - one with rotate icon. Standartly these buttons are not recognized in most distros, so before making "keyboard shortcut" you must map them. We are talking here about X41, but process is similar for every model.
 
