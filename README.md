@@ -26,14 +26,15 @@ Make it executable (if not)
 
 ```chmod +x thinkrotate```
 
-To make it automatically start with system (gnome): 
-1. Go to system > preferences > startup applications
-2. Simply add path to binary into command field
-3. Name it whatever you want.  
+To make it automatically start with system (gnome)
+
+  1. Go to system > preferences > startup applications
+  2. Simply add path to binary into command field
+  3. Name it whatever you want.  
 
 It is good thing to use one of the X41's hardware buttons located on lid to take action, ideal first one from the left after power and lock button - one with rotate icon. Standartly these buttons are not recognized in most distros, so before making "keyboard shortcut" you must map them. We are talking here about X41, but process is similar for every model.
 
-1. Add keycodes to /etc/rc.local
+Add keycodes to /etc/rc.local
 
 ```gksu gedit /etc/rc.local``` 
 
@@ -41,7 +42,7 @@ add this (or simillar depends on model) BEFORE exit 0;
 
 ```setkeycodes 6c 130```
 
-2. Now you sholud be able to detect this key and add command for it in system > preferences > keyboard shortcuts > add.
+Now you sholud be able to detect this key and add command for it in system > preferences > keyboard shortcuts > add.
 In command window add /path/to/binary/thinkrotate (r or l, see usage).  
 
 Usage
