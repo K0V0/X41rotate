@@ -141,7 +141,6 @@ int main(int argc, char *argv[]) {
 	int next_p;
 	int prev_p = current_pos();
 	int last_auto_p = NIL;
-	int ite = 0;
 	
     while (TRUE) {
 		fstate = fopen(SWIVEL_STATE_FILE, "r");
@@ -232,8 +231,6 @@ int main(int argc, char *argv[]) {
 		}			
 		prevmode = tabletmode;
 		sleep(1);
-		printf("%d \n", ite);
-		ite++;
 	}
     return 0;
 }
