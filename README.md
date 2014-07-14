@@ -35,7 +35,13 @@ A.)
 3. Name it whatever you want
 
 B.)
-Starting version 0.1.1 There is added functionality for mapping lid up and down key to up and down arrow depending on screen orientation, however to use this functionality program needs to be started from /etc/rc.local file or by another method thad give him superuser privilegies. This could be risky and in linux world is strongly not recommended.
+Starting version 0.1.2 There is added functionality for mapping lid up and down key to up and down arrow depending on screen orientation, however to use this functionality program needs sudo privilegies at some part, which could be potential safety risk. If you want this functionality and know the risk you should add this line into /etc/sudoers file:
+
+```gksu gedit /etc/sudoers``` 
+
+add:
+
+```yourusername ALL=(ALL:ALL) NOPASSWD:/usr/bin/setkeycodes```
 
 It is good thing to use one of the X41's hardware buttons located on lid to take action, ideal first one from the left after power and lock button - one with rotate icon. Standartly these buttons are not recognized in most distros, so before making "keyboard shortcut" you must map them. We are talking here about X41, but process is similar for every model.
 

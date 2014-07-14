@@ -25,10 +25,10 @@
 #define SWIVEL_UP_COMMANDS ""
 #define WIDTH_COMMANDS ""
 #define HEIGHT_COMMANDS ""
-#define LEFT_COMMANDS "setkeycodes 6d 108; setkeycodes 6e 103"
-#define RIGHT_COMMANDS "setkeycodes 6e 108; setkeycodes 6d 103"
-#define INVERTED_COMMANDS "setkeycodes 6e 108; setkeycodes 6d 103"
-#define NORMAL_COMMANDS "setkeycodes 6d 108; setkeycodes 6e 103"
+#define LEFT_COMMANDS "sudo -k setkeycodes 6d 108; sudo -k setkeycodes 6e 103"
+#define RIGHT_COMMANDS "sudo -k setkeycodes 6e 108; sudo -k setkeycodes 6d 103"
+#define INVERTED_COMMANDS "sudo -k setkeycodes 6e 108; sudo -k setkeycodes 6d 103"
+#define NORMAL_COMMANDS "sudo -k setkeycodes 6d 108; sudo -k setkeycodes 6e 103"
 
 int get_lock(void) {
 	int fdlock;
